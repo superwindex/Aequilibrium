@@ -1,0 +1,86 @@
+Test Case #1
+Description: Username is required field to login
+
+Steps:
+1. Open Chrome browser
+2. Go to https://www.saucedemo.com/index.html
+3. Enter Password but leave Username empty
+4. Click LOGIN button
+
+Expected Results:
+System displays this error message: Epic sadface: Username is required
+
+
+Test Case #2
+Description: Password is required field to login
+
+Steps:
+1. Open Chrome browser
+2. Go to https://www.saucedemo.com/index.html
+3. Enter Username but leave Password empty
+4. Click LOGIN button
+
+Expected Results:
+System displays this error message: Epic sadface: Password is required
+
+
+Test Case #3
+Description: Valid Username but invalid Password to login
+
+Steps:
+1. Open Chrome browser
+2. Go to https://www.saucedemo.com/index.html
+3. Enter Valid Username (standard_user, locked_out_user, problem_user, performance_glitch_user) but invalid Password
+4. Click LOGIN button
+
+Expected Results:
+System displays this error message: Epic sadface: Username and password do not match any user in this service
+
+
+Test Case #4
+Description: InValid Username but valid Password to login
+
+Steps:
+1. Open Chrome browser
+2. Go to https://www.saucedemo.com/index.html
+3. Enter invalid Username but valid Password (secret_sauce)
+4. Click LOGIN button
+
+Expected Results:
+System displays this error message: Epic sadface: Username and password do not match any user in this service
+
+
+Test Case #5
+Description: Valid Username and Password to login as Locked Out User
+
+Steps:
+1. Open Chrome browser
+2. Go to https://www.saucedemo.com/index.html
+3. Enter valid Username: locked_out_user and valid Password: secret_sauce
+4. Click LOGIN button
+
+Expected Results:
+System displays this error message: Epic sadface: Sorry, this user has been locked out.
+
+
+Test Case #6
+Description: Valid Username and Password to login as Standard User
+
+Steps:
+1. Open Chrome browser
+2. Go to https://www.saucedemo.com/index.html
+3. Enter valid Username: standard_user and valid Password: secret_sauce
+4. Click LOGIN button
+
+Expected Results:
+User logged in successfully. Products page is loaded.
+
+
+Test Case #7
+Description: Test on different browsers
+
+Steps:
+1. Repeat the test scenarios using different browser - Firefox
+
+Expected Results:
+Results are the same.
